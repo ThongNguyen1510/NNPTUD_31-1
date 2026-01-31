@@ -1,0 +1,97 @@
+/* Reset cơ bản */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Khu vực điều khiển */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+input, select, button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Bảng dữ liệu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* YÊU CẦU: Dòng đen và dòng trắng */
+/* Dòng lẻ: Màu trắng, chữ đen */
+tbody tr.row-white {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dòng chẵn: Màu đen, chữ trắng */
+tbody tr.row-black {
+    background-color: #222222; /* Đen dịu */
+    color: #ffffff;
+}
+
+/* Xử lý hình ảnh */
+.image-gallery {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.product-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Phân trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
